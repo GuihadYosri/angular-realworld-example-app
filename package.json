@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "eslint 'src/**/*.ts' --fix --quiet",
+    "lint": "eslint --config eslint.config.js 'src/**/*.ts' --fix --quiet",
     "prepare": "husky install"
   },
   "engines": {
@@ -32,8 +32,10 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.0.1",
+    "@angular-eslint/eslint-plugin": "^19.2.1",
     "@angular/cli": "^18.0.1",
     "@angular/compiler-cli": "18.0.0",
+    "@eslint/js": "^9.22.0",
     "@types/jasmine": "~4.3.0",
     "@types/marked": "^6.0.0",
     "angular-eslint": "19.2.1",
